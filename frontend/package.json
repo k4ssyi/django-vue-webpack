@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.8.3",
+    "webpack": "^4.41.5",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack --mode development",
+    "build": "node_modules/.bin/webpack --mode production",
+    "watch": "node_modules/.bin/webpack --watch -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

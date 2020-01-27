@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "sample_app"
+version = "0.1.0"
+description = ""
+authors = ["k4ssyi <kasikasi00@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.2"
+django-extensions = "^2.2.6"
+django-debug-toolbar = "^2.1"
+django-webpack-loader = "^0.6.0"
+Werkzeug = "^0.16.0"
+
+[tool.poetry.dev-dependencies]
+bpython = "^0.18"
+flake8 = "^3.7.9"
+pyformat = "^0.7"
+isort = "^4.3.21"
+ipdb = "^0.12.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[flake8]
+exclude = [".git","*migrations*","venv",".venv","media/*","static/*"]
+max-line-length = 119
+ignore = "F403"

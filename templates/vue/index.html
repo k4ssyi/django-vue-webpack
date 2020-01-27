@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block page_title %}Vueページ{% endblock %}
+
+{% block content %}
+{% verbatim %}
+<div id="app">
+  {{ message }}
+</div>
+{% endverbatim %}
+{% render_bundle 'main' %}
+
+<script>
+  var app = new Vue({
+    el: "#app",
+    data: {
+      message: "Hello Vue!"
+    }
+  });
+</script>
+{% endblock %}
